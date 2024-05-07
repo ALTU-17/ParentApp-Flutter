@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_og/student_activity.dart';
 import 'package:flutter_og/username.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart';
@@ -67,7 +68,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: NewLogin(),
+      home: StudentActivityPage(),
     );
   }
 }
@@ -142,14 +143,14 @@ class _LoginDemoState extends State<NewLogin> {
 
 
         //  Navigate to the login screen
+        //   Navigator.push(
+        //     context,
+        //     MaterialPageRoute(builder: (_) => Login1(emailstr)),
+        //   );
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (_) => Login1(emailstr)),
+            MaterialPageRoute(builder: (_) => YourWidget()),
           );
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(builder: (_) => AndroidIdScreen()),
-          // );
 
         }
 

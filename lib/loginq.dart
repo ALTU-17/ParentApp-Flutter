@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
@@ -67,6 +68,7 @@ class _LoginState extends State<Login1> {
   void initState() {
     super.initState();
     email = TextEditingController(text: widget.emailstr);
+
     // checkLoginStatus(); // Check login status when the login screen is initialized
   }
 
@@ -349,3 +351,4 @@ class _LoginState extends State<Login1> {
     );
   }
 }
+
